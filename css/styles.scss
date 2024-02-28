@@ -1,7 +1,10 @@
+$soft-sky-blue: #b0e2ff;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  $soft-sky-blue: $warm-ivory;
 }
