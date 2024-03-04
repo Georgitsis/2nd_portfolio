@@ -1,5 +1,5 @@
 $background-colour-bright: #b0e2ff;
-$font-clour-dark: #263238;
+$font-colour-dark: #263238;
 $font-colour-bright: #fff;
 
 * {
@@ -8,18 +8,18 @@ $font-colour-bright: #fff;
 
 :root {
   a {
-    color: $font-clour-dark;
+    color: $font-colour-dark;
 
     &:visited {
-      color: $font-clour-dark;
+      color: $font-colour-dark;
     }
 
     &:hover {
-      color: $font-clour-dark;
+      color: $font-colour-dark;
     }
 
     &:active {
-      color: $font-clour-dark;
+      color: $font-colour-dark;
     }
   }
 }
@@ -27,14 +27,14 @@ $font-colour-bright: #fff;
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
-  color: $font-clour-dark;
+  color: $font-colour-dark;
   max-width: 1200px;
   margin: 30px auto;
 }
 header {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
-  color: $font-clour-dark;
+  color: $font-colour-dark;
   font-size: xx-large;
 }
 
@@ -96,7 +96,7 @@ header {
 }
 
 .menu {
-  background-color: $font-clour-dark;
+  background-color: $font-colour-dark;
   list-style-type: none;
   padding-left: 0px;
   position: fixed;
@@ -111,7 +111,7 @@ header {
 
   li {
     text-align: center;
-    border: 1px solid $font-clour-dark;
+    border: 1px solid $font-colour-dark;
     padding: 10px 20px;
 
     a {
