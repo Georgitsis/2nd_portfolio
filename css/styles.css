@@ -19,31 +19,58 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #b0e2ff;
   color: #263238;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
-.navigation {
+header {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #b0e2ff;
+  color: #263238;
+  font-size: xx-large;
+}
+
+.navigation-smaller-screens {
   display: flex;
 }
-.navigation .page-logo {
+.navigation-smaller-screens .page-logo {
   flex-grow: 0;
 }
-.navigation .navigation-bigger-screens {
+.navigation-smaller-screens .middle-stretch-section {
   flex-grow: 1;
 }
-.navigation .collapsible-menu {
+.navigation-smaller-screens .collapsible-menu {
+  flex-grow: 0;
+}
+
+.navigation-bigger-screens {
+  display: flex;
+}
+.navigation-bigger-screens a {
+  text-decoration: none;
+}
+.navigation-bigger-screens .page-logo {
+  flex-grow: 0;
+}
+.navigation-bigger-screens .middle-stretch-section {
+  flex-grow: 1;
+  text-align: center;
+}
+.navigation-bigger-screens .middle-stretch-section a {
+  margin: 0 20px;
+}
+.navigation-bigger-screens .collapsible-menu {
   flex-grow: 0;
 }
 
 .page-logo {
   text-decoration: none;
-  font-size: xx-large;
   vertical-align: middle;
 }
 
 .menu {
   background-color: #263238;
   list-style-type: none;
-  font-size: xx-large;
   padding-left: 0px;
   position: fixed;
   transform: translateY(-100%);
@@ -73,7 +100,7 @@ body {
 }
 
 .show-menu {
-  transform: translateY(50px);
+  transform: translateY(85px);
 }
 
 .hamburger {
@@ -90,22 +117,18 @@ body {
   background: url("../images/close-icon.png");
 }
 
-main {
-  /*position: absolute;
-  top: 30px;
-  z-index: -1;*/
-}
-
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+@media all and (max-width: 850px) {
+  .navigation-bigger-screens {
+    display: none;
   }
-  .navigation-list li {
-    display: inline-block;
+}
+@media all and (min-width: 851px) and (max-width: 1023px) {
+  .navigation-smaller-screens {
+    display: none;
   }
 }
 @media (min-width: 1024px) {
-  .navigation-list li {
-    display: inline-block;
+  .navigation-smaller-screens {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
