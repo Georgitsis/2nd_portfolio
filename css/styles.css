@@ -100,13 +100,13 @@ header {
 }
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 .menu li a:visited {
-  color: white;
+  color: #fff;
 }
 .menu li a:hover, .menu li a:active {
-  color: white;
+  color: #fff;
   text-decoration: underline;
 }
 

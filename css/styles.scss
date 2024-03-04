@@ -1,5 +1,6 @@
-$soft-sky-blue: #b0e2ff;
-$darker-slate-gray: #263238;
+$background-colour-bright: #b0e2ff;
+$font-clour-dark: #263238;
+$font-colour-bright: #fff;
 
 * {
   box-sizing: border-box;
@@ -7,33 +8,33 @@ $darker-slate-gray: #263238;
 
 :root {
   a {
-    color: $darker-slate-gray;
+    color: $font-clour-dark;
 
     &:visited {
-      color: $darker-slate-gray;
+      color: $font-clour-dark;
     }
 
     &:hover {
-      color: $darker-slate-gray;
+      color: $font-clour-dark;
     }
 
     &:active {
-      color: $darker-slate-gray;
+      color: $font-clour-dark;
     }
   }
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: $soft-sky-blue;
-  color: $darker-slate-gray;
+  background-color: $background-colour-bright;
+  color: $font-clour-dark;
   max-width: 1200px;
   margin: 30px auto;
 }
 header {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: $soft-sky-blue;
-  color: $darker-slate-gray;
+  background-color: $background-colour-bright;
+  color: $font-clour-dark;
   font-size: xx-large;
 }
 
@@ -95,7 +96,7 @@ header {
 }
 
 .menu {
-  background-color: $darker-slate-gray;
+  background-color: $font-clour-dark;
   list-style-type: none;
   padding-left: 0px;
   position: fixed;
@@ -110,18 +111,18 @@ header {
 
   li {
     text-align: center;
-    border: 1px solid $darker-slate-gray;
+    border: 1px solid $font-clour-dark;
     padding: 10px 20px;
 
     a {
       text-decoration: none;
-      color: white;
+      color: $font-colour-bright;
       &:visited {
-        color: white;
+        color: $font-colour-bright;
       }
       &:hover,
       &:active {
-        color: white;
+        color: $font-colour-bright;
         text-decoration: underline;
       }
     }
