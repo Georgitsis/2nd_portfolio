@@ -35,11 +35,16 @@ header {
   color: $darker-slate-gray;
   font-size: xx-large;
 }
+.page-logo-div {
+  margin-left: 20px;
+  text-decoration: none;
+  align-self: center;
+}
 
 .navigation-smaller-screens {
   display: flex;
 
-  .page-logo {
+  .page-logo-div {
     flex-grow: 0;
   }
   .middle-stretch-section {
@@ -58,25 +63,22 @@ header {
     text-decoration: none;
   }
 
-  .page-logo {
+  .page-logo-div {
     flex-grow: 0;
   }
   .middle-stretch-section {
     flex-grow: 1;
     text-align: center;
+
     a {
       margin: 0 20px;
     }
   }
 
-  .collapsible-menu {
+  .lets-connect {
     flex-grow: 0;
+    margin-right: 20px;
   }
-}
-.page-logo {
-  //display: inline-block;
-  text-decoration: none;
-  vertical-align: middle;
 }
 
 .menu {

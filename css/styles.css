@@ -30,10 +30,16 @@ header {
   font-size: xx-large;
 }
 
+.page-logo-div {
+  margin-left: 20px;
+  text-decoration: none;
+  align-self: center;
+}
+
 .navigation-smaller-screens {
   display: flex;
 }
-.navigation-smaller-screens .page-logo {
+.navigation-smaller-screens .page-logo-div {
   flex-grow: 0;
 }
 .navigation-smaller-screens .middle-stretch-section {
@@ -49,7 +55,7 @@ header {
 .navigation-bigger-screens a {
   text-decoration: none;
 }
-.navigation-bigger-screens .page-logo {
+.navigation-bigger-screens .page-logo-div {
   flex-grow: 0;
 }
 .navigation-bigger-screens .middle-stretch-section {
@@ -59,13 +65,9 @@ header {
 .navigation-bigger-screens .middle-stretch-section a {
   margin: 0 20px;
 }
-.navigation-bigger-screens .collapsible-menu {
+.navigation-bigger-screens .lets-connect {
   flex-grow: 0;
-}
-
-.page-logo {
-  text-decoration: none;
-  vertical-align: middle;
+  margin-right: 20px;
 }
 
 .menu {
