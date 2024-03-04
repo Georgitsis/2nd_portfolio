@@ -5,14 +5,11 @@ const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
+  hamburger.classList.toggle("close-icon");
   if (menu.classList.contains("show-menu")) {
     menu.classList.remove("show-menu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
   } else {
     menu.classList.add("show-menu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
   }
 }
 
