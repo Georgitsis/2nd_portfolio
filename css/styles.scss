@@ -66,11 +66,18 @@ header {
 
   a {
     text-decoration: none;
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .page-logo-div {
     margin-left: 20px;
     flex-grow: 0;
+    a {
+      text-decoration: none;
+    }
   }
   .middle-stretch-section {
     flex-grow: 1;

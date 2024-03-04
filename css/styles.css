@@ -57,9 +57,15 @@ header {
 .navigation-bigger-screens a {
   text-decoration: none;
 }
+.navigation-bigger-screens a:active, .navigation-bigger-screens a:hover {
+  text-decoration: underline;
+}
 .navigation-bigger-screens .page-logo-div {
   margin-left: 20px;
   flex-grow: 0;
+}
+.navigation-bigger-screens .page-logo-div a {
+  text-decoration: none;
 }
 .navigation-bigger-screens .middle-stretch-section {
   flex-grow: 1;
