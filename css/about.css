@@ -1,0 +1,24 @@
+.main-header {
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+}
+
+.about-content {
+  display: flex;
+}
+.about-content .left-column {
+  margin: 0 20px;
+  flex: 1 0 200px;
+  text-align: center;
+  align-self: center;
+}
+.about-content .right-column {
+  margin: 0 20px;
+  flex: 1 0 200px;
+  text-align: center;
+}
+.about-content img {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=about.css.map */
