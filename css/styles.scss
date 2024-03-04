@@ -36,13 +36,16 @@ header {
   font-size: xx-large;
 }
 .page-logo-div {
-  margin-left: 20px;
   text-decoration: none;
   align-self: center;
 }
 
 .navigation-smaller-screens {
   display: flex;
+
+  a {
+    text-decoration: none;
+  }
 
   .page-logo-div {
     flex-grow: 0;
@@ -64,6 +67,7 @@ header {
   }
 
   .page-logo-div {
+    margin-left: 20px;
     flex-grow: 0;
   }
   .middle-stretch-section {

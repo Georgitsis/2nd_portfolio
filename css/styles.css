@@ -31,13 +31,15 @@ header {
 }
 
 .page-logo-div {
-  margin-left: 20px;
   text-decoration: none;
   align-self: center;
 }
 
 .navigation-smaller-screens {
   display: flex;
+}
+.navigation-smaller-screens a {
+  text-decoration: none;
 }
 .navigation-smaller-screens .page-logo-div {
   flex-grow: 0;
@@ -56,6 +58,7 @@ header {
   text-decoration: none;
 }
 .navigation-bigger-screens .page-logo-div {
+  margin-left: 20px;
   flex-grow: 0;
 }
 .navigation-bigger-screens .middle-stretch-section {
