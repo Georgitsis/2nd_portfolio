@@ -74,6 +74,11 @@ body {
     a {
       text-decoration: none;
       color: white;
+      &:hover,
+      &:active,
+      &:visited {
+        color: lightgray;
+      }
     }
   }
 }

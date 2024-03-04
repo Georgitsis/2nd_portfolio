@@ -64,6 +64,9 @@ body {
   text-decoration: none;
   color: white;
 }
+.menu li a:hover, .menu li a:active, .menu li a:visited {
+  color: lightgray;
+}
 
 .show-menu {
   transform: translateY(50px);
