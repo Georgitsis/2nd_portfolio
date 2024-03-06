@@ -96,6 +96,12 @@ main {
   }
 }
 
+/*#current-site {
+  a {
+    text-decoration: underline #ffa500 3px;
+  }
+}*/
+
 @media all and (min-width: 471px) {
   .email-linebreak {
     display: none;
@@ -106,7 +112,7 @@ main {
     }
   }
 }
-@media all and (min-width: 601px) {
+@media all and (min-width: 601px) and (max-width: 750px) {
   .main-header {
     font-size: 6em;
   }
@@ -117,7 +123,7 @@ main {
   }
 }
 
-@media all and (min-width: 751px) {
+@media all and (min-width: 751px) and (max-width: 800px) {
   .email-linebreak {
     display: none;
   }

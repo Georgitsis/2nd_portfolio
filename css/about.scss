@@ -1,6 +1,7 @@
 @import url("./styles.scss");
 
 $font-colour-dark: #263238;
+$warm-colour: #ffa500;
 
 .main-header {
   width: 100%;
@@ -15,22 +16,26 @@ $font-colour-dark: #263238;
 
   .left-column {
     margin: 0 20px;
-    flex: 1 0 200px;
+    flex: 0 0 200px;
     text-align: center;
     align-self: center;
     animation: slideInFromLeft 0.5s ease forwards;
-
-    img {
-      max-width: 300px;
-      height: auto;
-    }
   }
   .right-column {
     margin: 0 20px;
+    padding: 20px;
+    background-color: $font-colour-dark;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px 10px 10px 10px;
     flex: 1 0 200px;
     text-align: center;
     animation: slideInFromRight 0.5s ease forwards;
   }
+}
+.portrait-image {
+  max-width: 40vw;
+  height: auto;
 }
 
 .take-action-links {
@@ -38,15 +43,15 @@ $font-colour-dark: #263238;
   margin-top: 50px;
   a {
     display: inline-block;
-    font-size: xx-large;
+    font-size: 2em;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    background-color: $font-colour-dark;
-    margin: 0px 10px;
+    background-color: $warm-colour;
+    margin: 10px 10px;
     height: auto;
     width: 250px;
-    border: 3px solid $font-colour-dark;
+    border: 3px solid #fff;
     border-radius: 25px;
     animation: slideInFromButtom 0.5s ease forwards;
 
@@ -55,6 +60,19 @@ $font-colour-dark: #263238;
     &:hover {
       color: #fff;
     }
+  }
+}
+
+@media all and (min-width: 850px) {
+  .main-header {
+    font-size: 6em;
+  }
+  .portrait-image {
+    max-width: 300px;
+    height: auto;
+  }
+  .right-column {
+    font-size: 1.2em;
   }
 }
 
