@@ -191,19 +191,31 @@ h1 {
   .navigation-bigger-screens {
     display: none;
   }
+  h1 {
+    font-size: 60px;
+  }
 }
 @media all and (min-width: 651px) and (max-width: 850px) {
   .navigation-bigger-screens {
     display: none;
+  }
+  h1 {
+    font-size: 72px;
   }
 }
 @media all and (min-width: 851px) and (max-width: 1023px) {
   .navigation-smaller-screens {
     display: none;
   }
+  h1 {
+    font-size: 84px;
+  }
 }
 @media all and (min-width: 1024px) {
   .navigation-smaller-screens {
     display: none;
+  }
+  h1 {
+    font-size: 96px;
   }
 }/*# sourceMappingURL=styles.css.map */
