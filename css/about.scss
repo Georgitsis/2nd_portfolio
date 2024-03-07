@@ -6,7 +6,7 @@ $warm-colour: #ffa500;
 .main-header {
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   animation: slideInFromTop 0.5s ease forwards;
 }
 
@@ -15,9 +15,8 @@ $warm-colour: #ffa500;
   flex-direction: column;
 
   .left-column {
-    margin-right: 20px;
-    flex: 0 0 200px;
-    text-align: center;
+    //margin-right: 20px;
+    //text-align: center;
     align-self: center;
     animation: slideInFromLeft 0.5s ease forwards;
   }
@@ -26,6 +25,7 @@ $warm-colour: #ffa500;
     padding: 20px;
     background-color: $font-colour-dark;
     color: #fff;
+    //font-size: 1.5em;
     border: 3px solid #fff;
     border-radius: 10px 10px 10px 10px;
     flex: 1 0 200px;
@@ -40,7 +40,7 @@ $warm-colour: #ffa500;
 
 .take-action-links {
   text-align: center;
-  margin-top: 50px;
+
   a {
     display: inline-block;
     font-size: 2em;
@@ -63,33 +63,41 @@ $warm-colour: #ffa500;
   }
 }
 
-@media all and (min-width: 850px) {
-  .main-header {
-    font-size: 6em;
-  }
+.under-portrait {
+  display: none;
+}
+
+@media all and (min-width: 471px) {
+}
+
+@media all and (min-width: 851px) {
   .portrait-image {
     max-width: 300px;
     height: auto;
   }
   .right-column {
-    font-size: 1.2em;
   }
-}
-
-@media all and (min-width: 851px) and (max-width: 1023px) {
   .about-content {
     flex-direction: row;
+    .left-column {
+      display: flex;
+      flex: 0 1 200px;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: inherit;
+      align-self: flex-start;
+    }
     .right-column {
       text-align: left;
     }
   }
-}
-
-@media (min-width: 1024px) {
-  .about-content {
-    flex-direction: row;
-    .right-column {
-      text-align: left;
-    }
+  .take-action-links {
+    margin-top: 10px;
+  }
+  .under-portrait {
+    display: block;
+  }
+  .under-about-content {
+    display: none;
   }
 }

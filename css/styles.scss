@@ -81,15 +81,20 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
   color: $font-colour-dark;
+  font-size: medium;
   max-width: 1200px;
   margin: 30px auto;
   padding: 0 20px;
 }
 header {
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: $background-colour-bright;
-  color: $font-colour-dark;
   font-size: xx-large;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  animation: slideInFromTop 0.5s ease forwards;
 }
 
 .page-logo-div {
@@ -199,7 +204,19 @@ header {
   background: url("../images/close-icon.png");
 }
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 450px) {
+  .navigation-bigger-screens {
+    display: none;
+  }
+}
+
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .navigation-bigger-screens {
+    display: none;
+  }
+}
+
+@media all and (min-width: 651px) and (max-width: 850px) {
   .navigation-bigger-screens {
     display: none;
   }
@@ -211,7 +228,7 @@ header {
   }
 }
 
-@media (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .navigation-smaller-screens {
     display: none;
   }

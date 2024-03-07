@@ -2,7 +2,7 @@
 .main-header {
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   animation: slideInFromTop 0.5s ease forwards;
 }
 
@@ -11,9 +11,6 @@
   flex-direction: column;
 }
 .about-content .left-column {
-  margin-right: 20px;
-  flex: 0 0 200px;
-  text-align: center;
   align-self: center;
   animation: slideInFromLeft 0.5s ease forwards;
 }
@@ -36,7 +33,6 @@
 
 .take-action-links {
   text-align: center;
-  margin-top: 50px;
 }
 .take-action-links a {
   display: inline-block;
@@ -56,31 +52,36 @@
   color: #fff;
 }
 
-@media all and (min-width: 850px) {
-  .main-header {
-    font-size: 6em;
-  }
+.under-portrait {
+  display: none;
+}
+
+@media all and (min-width: 851px) {
   .portrait-image {
     max-width: 300px;
     height: auto;
   }
-  .right-column {
-    font-size: 1.2em;
-  }
-}
-@media all and (min-width: 851px) and (max-width: 1023px) {
   .about-content {
     flex-direction: row;
+  }
+  .about-content .left-column {
+    display: flex;
+    flex: 0 1 200px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: inherit;
+    align-self: flex-start;
   }
   .about-content .right-column {
     text-align: left;
   }
-}
-@media (min-width: 1024px) {
-  .about-content {
-    flex-direction: row;
+  .take-action-links {
+    margin-top: 10px;
   }
-  .about-content .right-column {
-    text-align: left;
+  .under-portrait {
+    display: block;
+  }
+  .under-about-content {
+    display: none;
   }
 }/*# sourceMappingURL=about.css.map */
