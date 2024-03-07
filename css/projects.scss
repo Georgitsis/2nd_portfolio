@@ -1,6 +1,7 @@
 @import url("./styles.scss");
 $font-colour-dark: #263238;
 $font-colour-bright: #fff;
+$warm-colour: #ffa500;
 
 .flex-column-container {
   display: flex;
@@ -9,17 +10,56 @@ $font-colour-bright: #fff;
 
 .project-flex-cotainer {
   display: flex;
-  margin-bottom: 20px;
+  flex-direction: column;
+  background-color: $font-colour-dark;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px;
+
+  .project-header {
+    color: #fff;
+  }
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: column;
+
+  .project-links-row {
+    display: flex;
+
+    .project-link-image {
+      width: 25px;
+      height: auto;
+    }
+
+    .project-links-text {
+      align-self: center;
+      margin-left: 5px;
+      a {
+        //text-decoration: none;
+        color: #fff;
+        &:visited,
+        &:hover,
+        &:active {
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
 .project-image-container {
-  flex: 0 0 300px;
+  flex: 0 0 1px;
   text-align: center;
-  height: 100%;
   a {
     margin: 0 auto;
     .project-image {
-      width: 90%;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #fff;
     }
   }
 }
@@ -28,18 +68,31 @@ $font-colour-bright: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 0 500px;
-  margin-left: 20px;
-  .project-header {
-    margin: 0;
+  flex: 0 0 1px;
+  color: #fff;
+
+  .project-header-bigger-screens {
+    display: none;
+  }
+
+  .project-text {
+    margin: 10px 0px;
+    text-align: justify;
+    margin-bottom: 10px;
   }
 }
-.project-text {
-  margin: 0;
+
+@media all and (max-width: 450px) {
 }
 
-.project-links {
+@media all and (min-width: 451px) and (max-width: 650px) {
 }
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 651px) and (max-width: 850px) {
+}
+
+@media all and (min-width: 851px) and (max-width: 1023px) {
+}
+
+@media all and (min-width: 1024px) {
 }
