@@ -182,39 +182,32 @@ h1 {
   background: url("../images/close-icon.png");
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 874px) {
   .navigation-bigger-screens {
     display: none;
   }
 }
-@media all and (min-width: 451px) and (max-width: 650px) {
-  .navigation-bigger-screens {
+@media all and (min-width: 875px) {
+  .navigation-smaller-screens {
     display: none;
   }
+}
+@media all and (min-width: 451px) and (max-width: 650px) {
   h1 {
     font-size: 60px;
   }
 }
 @media all and (min-width: 651px) and (max-width: 850px) {
-  .navigation-bigger-screens {
-    display: none;
-  }
   h1 {
     font-size: 72px;
   }
 }
 @media all and (min-width: 851px) and (max-width: 1023px) {
-  .navigation-smaller-screens {
-    display: none;
-  }
   h1 {
     font-size: 84px;
   }
 }
 @media all and (min-width: 1024px) {
-  .navigation-smaller-screens {
-    display: none;
-  }
   h1 {
     font-size: 96px;
   }
