@@ -11,14 +11,14 @@
   flex-direction: column;
 }
 .about-content .left-column {
-  margin: 0 20px;
+  margin-right: 20px;
   flex: 0 0 200px;
   text-align: center;
   align-self: center;
   animation: slideInFromLeft 0.5s ease forwards;
 }
 .about-content .right-column {
-  margin: 0 20px;
+  margin-left: 20px;
   padding: 20px;
   background-color: #263238;
   color: #fff;
