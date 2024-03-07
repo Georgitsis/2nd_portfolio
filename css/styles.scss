@@ -233,10 +233,24 @@ h1 {
   h1 {
     font-size: 84px;
   }
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: large;
+  }
 }
 
 @media all and (min-width: 1024px) {
   h1 {
-    font-size: 96px;
+    font-size: 84px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: large;
   }
 }

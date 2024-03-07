@@ -13,12 +13,7 @@ main {
 .contact-center-div {
   max-width: 100%;
 }
-.main-header {
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  animation: slideInFromTop 0.5s ease forwards;
-}
+
 .contact-decoration-div {
   display: flex;
   flex-direction: column;
@@ -37,7 +32,7 @@ main {
 
 .contact-row {
   display: flex;
-  margin: 0px 1px;
+  //margin: 0px 1px;
   max-width: 100%;
   .contact-icon-div {
     flex: 0 0 100px;
@@ -49,7 +44,6 @@ main {
   }
   .contact-information {
     flex: 1 1 300px;
-    font-size: 1.2em;
     align-self: center;
 
     a {
@@ -80,14 +74,30 @@ main {
   }
 }
 
-@media all and (min-width: 355px) {
-  .main-header {
-    font-size: 4em;
+@media all and (min-width: 451px) {
+  .email-line-break {
+    display: none;
   }
-  .contact-row {
-    .contact-information {
-      font-size: 1.5em;
-    }
+}
+
+@media all and (max-width: 450px) {
+  .contact-information,
+  a {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .contact-information,
+  a {
+    font-size: 25px;
+  }
+}
+
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .contact-information,
+  a {
+    font-size: 30px;
   }
   .contact-row:last-child {
     .contact-information {
@@ -96,57 +106,26 @@ main {
   }
 }
 
-/*#current-site {
+@media all and (min-width: 851px) and (max-width: 1023px) {
+  .contact-information,
   a {
-    text-decoration: underline #ffa500 3px;
+    font-size: 35px;
   }
-}*/
-
-@media all and (min-width: 471px) {
-  .email-linebreak {
-    display: none;
-  }
-  .contact-row.last-row {
+  .contact-row:last-child {
     .contact-information {
       text-align: center;
     }
   }
 }
-@media all and (min-width: 601px) and (max-width: 750px) {
-  .main-header {
-    font-size: 6em;
-  }
-  .contact-row {
-    .contact-information {
-      font-size: 2em;
-    }
-  }
-}
 
-@media all and (min-width: 751px) and (max-width: 800px) {
-  .email-linebreak {
-    display: none;
+@media all and (min-width: 1024px) {
+  .contact-information,
+  a {
+    font-size: 35px;
   }
-  .main-header {
-    font-size: 6em;
-  }
-  .contact-row {
+  .contact-row:last-child {
     .contact-information {
-      font-size: 2.5em;
-    }
-  }
-}
-
-@media all and (min-width: 801px) {
-  .email-linebreak {
-    display: none;
-  }
-  .main-header {
-    font-size: 6em;
-  }
-  .contact-row {
-    .contact-information {
-      font-size: 3em;
+      text-align: center;
     }
   }
 }
