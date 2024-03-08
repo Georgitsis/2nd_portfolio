@@ -8,7 +8,7 @@ $warm-colour: #ffa500;
   flex-direction: column;
 }
 
-.project-flex-cotainer {
+.project-flex-container {
   display: flex;
   flex-direction: column;
   background-color: $font-colour-dark;
@@ -16,12 +16,11 @@ $warm-colour: #ffa500;
   border-radius: 10px;
   margin-bottom: 25px;
   padding: 10px;
-
-  .project-header {
-    color: #fff;
-  }
 }
 
+.project-header {
+  color: #fff;
+}
 .project-links-container {
   display: flex;
   flex-direction: column;
@@ -63,6 +62,9 @@ $warm-colour: #ffa500;
     }
   }
 }
+.project-header-bigger-screens {
+  display: none;
+}
 
 .project-content {
   display: flex;
@@ -70,10 +72,6 @@ $warm-colour: #ffa500;
   justify-content: space-between;
   flex: 0 0 1px;
   color: #fff;
-
-  .project-header-bigger-screens {
-    display: none;
-  }
 
   .project-text {
     margin: 10px 0px;
@@ -89,10 +87,70 @@ $warm-colour: #ffa500;
 }
 
 @media all and (min-width: 651px) and (max-width: 850px) {
+  .project-header {
+    display: none;
+  }
+  .project-header-bigger-screens {
+    display: block;
+  }
+  .project-flex-container {
+    flex-direction: row;
+  }
+  .project-content {
+    flex: 0 1 650px;
+    margin-left: 10px;
+  }
+  .project-image-container {
+    flex: 0 1 300px;
+    align-self: center;
+  }
+  .project-header-bigger-screens {
+    margin-top: 0px;
+  }
 }
 
 @media all and (min-width: 851px) and (max-width: 1023px) {
+  .project-header {
+    display: none;
+  }
+  .project-header-bigger-screens {
+    display: block;
+  }
+  .project-flex-container {
+    flex-direction: row;
+  }
+  .project-content {
+    flex: 0 1 650px;
+    margin-left: 10px;
+  }
+  .project-image-container {
+    flex: 0 1 300px;
+    align-self: center;
+  }
+  .project-header-bigger-screens {
+    margin-top: 0px;
+  }
 }
 
 @media all and (min-width: 1024px) {
+  .project-header {
+    display: none;
+  }
+  .project-header-bigger-screens {
+    display: block;
+  }
+  .project-flex-container {
+    flex-direction: row;
+  }
+  .project-content {
+    flex: 0 1 650px;
+    margin-left: 10px;
+  }
+  .project-image-container {
+    flex: 0 1 300px;
+    align-self: center;
+  }
+  .project-header-bigger-screens {
+    margin-top: 0px;
+  }
 }
