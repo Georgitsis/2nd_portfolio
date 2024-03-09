@@ -87,48 +87,9 @@ h1 {
   align-self: center;
 }
 
-.navigation-smaller-screens {
+.navigation {
   display: flex;
-}
-.navigation-smaller-screens a {
-  text-decoration: none;
-}
-.navigation-smaller-screens .page-logo-div {
-  flex-grow: 0;
-}
-.navigation-smaller-screens .middle-stretch-section {
-  flex-grow: 1;
-}
-.navigation-smaller-screens .collapsible-menu {
-  flex-grow: 0;
-}
-
-.navigation-bigger-screens {
-  display: flex;
-}
-.navigation-bigger-screens a {
-  text-decoration: none;
-}
-.navigation-bigger-screens a:active, .navigation-bigger-screens a:hover {
-  text-decoration: underline;
-}
-.navigation-bigger-screens .page-logo-div {
-  margin-left: 20px;
-  flex-grow: 0;
-}
-.navigation-bigger-screens .page-logo-div a {
-  text-decoration: none;
-}
-.navigation-bigger-screens .middle-stretch-section {
-  flex-grow: 1;
-  text-align: center;
-}
-.navigation-bigger-screens .middle-stretch-section a {
-  margin: 0 20px;
-}
-.navigation-bigger-screens .lets-connect {
-  flex-grow: 0;
-  margin-right: 20px;
+  align-items: center;
 }
 
 .menu {
@@ -162,6 +123,31 @@ h1 {
   text-decoration: underline;
 }
 
+.navigation-link {
+  text-decoration: none;
+}
+
+.navigation-logo {
+  flex: 1 1 300px;
+}
+
+.navigation-middle {
+  display: none;
+}
+
+.navigation-link-middle {
+  flex: 0 0 150px;
+}
+
+.lets-connect {
+  display: none;
+}
+
+.navigation-end {
+  flex: 1 1 300px;
+  text-align: end;
+}
+
 .show-menu {
   transform: translateY(85px);
 }
@@ -170,9 +156,6 @@ h1 {
   height: 50px;
   width: 50px;
   border: none;
-}
-
-.menu-icon {
   background: url("../images/menu-icon.png");
 }
 
@@ -180,14 +163,27 @@ h1 {
   background: url("../images/close-icon.png");
 }
 
-@media all and (max-width: 874px) {
-  .navigation-bigger-screens {
+@media all and (min-width: 890px) {
+  .navigation-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 200px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .hamburger {
     display: none;
   }
-}
-@media all and (min-width: 875px) {
-  .navigation-smaller-screens {
-    display: none;
+  .lets-connect {
+    display: block;
+  }
+  .navigation-middle {
+    flex-grow: 1;
+  }
+  .navigation-logo,
+  .navigation-end {
+    flex-grow: 0;
   }
 }
 @media all and (min-width: 451px) and (max-width: 650px) {
