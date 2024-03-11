@@ -1,112 +1,95 @@
-$background-colour-bright: #b0e2ff;
-$font-colour-dark: #263238;
-$font-colour-bright: #fff;
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(25px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-25px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-25px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromButtom {
-  0% {
-    transform: translateY(25px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes brighten20pers {
-  0% {
-    opacity: 0.85;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+@import "./variables.scss";
+@import "./animations.scss";
 
 * {
   box-sizing: border-box;
 }
 
-:root {
-  a {
-    color: $font-colour-dark;
-
-    &:visited {
-      color: $font-colour-dark;
-    }
-
-    &:hover {
-      color: $font-colour-dark;
-    }
-
-    &:active {
-      color: $font-colour-dark;
-    }
-  }
-}
-
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
-  color: $font-colour-dark;
-  max-width: 1200px;
-  margin: 30px auto;
 }
 header {
-  font-size: xx-large;
+  background-color: $background-colour-dark;
 }
 
-h1 {
+main {
+  color: $font-colour-dark;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navigation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.navigation-link {
+  color: $font-colour-bright;
+  font-size: xx-large;
+  text-decoration: none;
+
+  &:visited {
+    color: $font-colour-bright;
+  }
+
+  &:hover {
+    color: $font-colour-bright;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $font-colour-bright;
+  }
+}
+.page-logo-div {
+  text-decoration: none;
+  align-self: center;
+}
+.navigation-logo {
+  flex: 1 1 300px;
+  padding-left: 10px;
+}
+
+.navigation-middle {
+  display: none;
+}
+
+.navigation-link-middle {
+  flex: 0 0 150px;
+}
+
+.lets-connect {
+  display: none;
+}
+
+.navigation-end {
+  flex: 1 1 300px;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.hamburger {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: url("../images/menu-icon.png");
+}
+
+.close-icon {
+  background: url("../images/close-icon.png");
+}
+
+.main-header {
   width: 100%;
   text-align: center;
   font-size: 48px;
   animation: slideInFromTop 0.5s ease forwards;
 }
 
-.page-logo-div {
-  text-decoration: none;
-  align-self: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
 .menu {
-  background-color: $font-colour-dark;
+  background-color: $background-colour-dark;
   list-style-type: none;
   padding-left: 0px;
   position: fixed;
@@ -138,47 +121,9 @@ h1 {
     }
   }
 }
-
-.navigation-link {
-  text-decoration: none;
-}
-
-.navigation-logo {
-  flex: 1 1 300px;
-}
-
-.navigation-middle {
-  display: none;
-}
-
-.navigation-link-middle {
-  flex: 0 0 150px;
-}
-
-.lets-connect {
-  display: none;
-}
-
-.navigation-end {
-  flex: 1 1 300px;
-  text-align: end;
-}
-
 .show-menu {
   transform: translateY(85px);
 }
-
-.hamburger {
-  height: 50px;
-  width: 50px;
-  border: none;
-  background: url("../images/menu-icon.png");
-}
-
-.close-icon {
-  background: url("../images/close-icon.png");
-}
-
 @media all and (min-width: 890px) {
   .navigation-middle {
     display: flex;
@@ -206,39 +151,25 @@ h1 {
 }
 
 @media all and (min-width: 451px) and (max-width: 650px) {
-  h1 {
+  .main-header {
     font-size: 60px;
   }
 }
 
 @media all and (min-width: 651px) and (max-width: 850px) {
-  h1 {
+  .main-header {
     font-size: 72px;
   }
 }
 
 @media all and (min-width: 851px) and (max-width: 1023px) {
-  h1 {
+  .main-header {
     font-size: 84px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: large;
   }
 }
 
 @media all and (min-width: 1024px) {
-  h1 {
+  .main-header {
     font-size: 84px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: large;
   }
 }
