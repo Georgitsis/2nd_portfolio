@@ -146,13 +146,14 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   z-index: 99;
 }
 .menu li {
   text-align: center;
   border: 1px solid #263238;
   padding: 10px 20px;
+  font-size: xx-large;
 }
 .menu li a {
   text-decoration: none;
@@ -167,7 +168,7 @@ main {
 }
 
 .show-menu {
-  transform: translateY(85px);
+  transform: translateY(100px);
 }
 
 @media all and (min-width: 890px) {
