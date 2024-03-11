@@ -248,7 +248,7 @@ main {
 
 .project-image {
   width: 100%;
-  border: solid 2px #fff;
+  border: solid 2px #263238;
 }
 
 .project-links {
@@ -265,6 +265,7 @@ main {
   -moz-column-gap: 5px;
        column-gap: 5px;
   text-decoration: none;
+  color: #263238;
 }
 .project-link-row:visited {
   color: #263238;

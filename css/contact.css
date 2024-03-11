@@ -69,11 +69,14 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-link {
   color: #fff;
   font-size: xx-large;
+  text-decoration: none;
 }
 .navigation-link:visited {
   color: #fff;
@@ -86,60 +89,14 @@ main {
   color: #fff;
 }
 
-.main-header {
-  width: 100%;
-  text-align: center;
-  font-size: 48px;
-  animation: slideInFromTop 0.5s ease forwards;
-}
-
 .page-logo-div {
   text-decoration: none;
   align-self: center;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  background-color: #263238;
-  list-style-type: none;
-  padding-left: 0px;
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  margin: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-}
-.menu li {
-  text-align: center;
-  border: 1px solid #263238;
-  padding: 10px 20px;
-}
-.menu li a {
-  text-decoration: none;
-  color: #fff;
-}
-.menu li a:visited {
-  color: #fff;
-}
-.menu li a:hover, .menu li a:active {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.navigation-link {
-  text-decoration: none;
-}
-
 .navigation-logo {
   flex: 1 1 300px;
+  padding-left: 10px;
 }
 
 .navigation-middle {
@@ -157,10 +114,7 @@ main {
 .navigation-end {
   flex: 1 1 300px;
   text-align: end;
-}
-
-.show-menu {
-  transform: translateY(85px);
+  padding-right: 10px;
 }
 
 .hamburger {
@@ -172,6 +126,49 @@ main {
 
 .close-icon {
   background: url("../images/close-icon.png");
+}
+
+.main-header {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  animation: slideInFromTop 0.5s ease forwards;
+}
+
+.menu {
+  background-color: #263238;
+  list-style-type: none;
+  padding-left: 0px;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 99;
+}
+.menu li {
+  text-align: center;
+  border: 1px solid #263238;
+  padding: 10px 20px;
+  font-size: xx-large;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu li a:visited {
+  color: #fff;
+}
+.menu li a:hover, .menu li a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.show-menu {
+  transform: translateY(90px);
 }
 
 @media all and (min-width: 890px) {
@@ -198,35 +195,23 @@ main {
   }
 }
 @media all and (min-width: 451px) and (max-width: 650px) {
-  h1 {
+  .main-header {
     font-size: 60px;
   }
 }
 @media all and (min-width: 651px) and (max-width: 850px) {
-  h1 {
+  .main-header {
     font-size: 72px;
   }
 }
 @media all and (min-width: 851px) and (max-width: 1023px) {
-  h1 {
+  .main-header {
     font-size: 84px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  p {
-    font-size: large;
   }
 }
 @media all and (min-width: 1024px) {
-  h1 {
+  .main-header {
     font-size: 84px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  p {
-    font-size: large;
   }
 }
 .contact-conntent {
@@ -237,7 +222,7 @@ main {
   max-width: 100%;
 }
 
-.contact-decoration-div {
+.contact-contant {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -255,7 +240,6 @@ main {
 
 .contact-row {
   display: flex;
-  max-width: 100%;
 }
 .contact-row .contact-icon-div {
   flex: 0 0 100px;
@@ -267,11 +251,14 @@ main {
 }
 .contact-row .contact-information {
   flex: 1 1 300px;
+  max-width: 100%;
   align-self: center;
 }
 .contact-row .contact-information a {
   text-decoration: none;
   color: #fff;
+  text-wrap: wrap;
+  width: 100%;
 }
 .contact-row .contact-information a:visited {
   color: #fff;
@@ -281,6 +268,9 @@ main {
   text-decoration: underline;
 }
 
+/*.contact-email {
+  flex-wrap: wrap;
+}*/
 .contact-row:last-child {
   text-align: center;
   background-color: #ffa500;
