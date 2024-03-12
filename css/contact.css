@@ -55,6 +55,7 @@ body {
   background-color: #b0d8ef;
   height: -moz-max-content;
   height: max-content;
+  min-height: 100vh;
 }
 
 header {
@@ -216,14 +217,6 @@ main {
     font-size: 84px;
   }
 }
-.contact-conntent {
-  width: 100%;
-}
-
-.contact-center-div {
-  max-width: 100%;
-}
-
 .contact-content {
   display: flex;
   flex-wrap: wrap;

@@ -216,4 +216,44 @@ main {
   .main-header {
     font-size: 84px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
+}
+
+.first-name {
+  font-size: 8vw;
+  flex-grow: 1;
+  text-align: start;
+}
+
+.surname {
+  font-size: 8vw;
+  flex-grow: 1;
+  text-align: end;
+}
+
+.eo {
+  color: #ffa500;
+  margin: 0;
+}
+
+@media all and (min-width: 1200px) {
+  .first-name {
+    font-size: 95px;
+  }
+  .surname {
+    font-size: 95px;
+  }
+}/*# sourceMappingURL=index.css.map */

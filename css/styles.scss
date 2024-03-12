@@ -16,6 +16,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
   height: max-content;
+  min-height: 100vh;
 }
 header {
   background-color: $background-colour-dark;
