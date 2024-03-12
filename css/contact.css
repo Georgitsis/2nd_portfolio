@@ -50,7 +50,7 @@
   box-sizing: border-box;
 }
 
-main {
+body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #b0d8ef;
   height: -moz-max-content;
