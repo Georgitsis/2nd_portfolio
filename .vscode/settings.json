@@ -1,4 +1,7 @@
 {
-    "prettier.htmlWhitespaceSensitivity": "ignore",
-    "prettier.printWidth": 100
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.printWidth": 80,
+  "prettier.endOfLine": "crlf",
+  "prettier.bracketSameLine": true,
+  "editor.formatOnSave": false
 }

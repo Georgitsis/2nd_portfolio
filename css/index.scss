@@ -28,6 +28,7 @@ main {
 .eo {
   color: $warm-colour;
   margin: 0;
+  display: inline-block;
 }
 
 @media all and (min-width: 1200px) {
