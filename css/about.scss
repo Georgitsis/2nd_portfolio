@@ -1,9 +1,10 @@
-$font-colour-dark: #263238;
+@import "./styles.scss";
 
 .main-header {
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
+  animation: slideInFromTop 0.5s ease forwards;
 }
 
 .about-content {
@@ -11,59 +12,85 @@ $font-colour-dark: #263238;
   flex-direction: column;
 
   .left-column {
-    margin: 0 20px;
-    flex: 1 0 200px;
-    text-align: center;
     align-self: center;
-
-    img {
-      max-width: 300px;
-      height: auto;
-    }
+    animation: slideInFromLeft 0.5s ease forwards;
   }
   .right-column {
-    margin: 0 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: $font-colour-dark;
+    color: $font-colour-bright;
+    border: 3px solid #fff;
+    border-radius: 10px 10px 10px 10px;
     flex: 1 0 200px;
     text-align: center;
+    animation: slideInFromRight 0.5s ease forwards;
   }
+}
+.portrait-image {
+  max-width: 40vw;
+  height: auto;
+  margin-left: 20px;
 }
 
 .take-action-links {
   text-align: center;
-  margin-top: 50px;
+
   a {
     display: inline-block;
-    font-size: xx-large;
+    font-size: 2em;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    background-color: $font-colour-dark;
-    margin: 0px 10px;
+    background-color: $warm-colour;
+    margin: 10px 10px;
     height: auto;
     width: 250px;
-    border: 3px solid $font-colour-dark;
+    border: 3px solid #fff;
     border-radius: 25px;
+    animation: slideInFromButtom 0.5s ease forwards;
+
     &:visited,
-    &:active {
+    &:active,
+    &:hover {
       color: #fff;
     }
   }
 }
 
-@media all and (min-width: 851px) and (max-width: 1023px) {
+.under-portrait {
+  display: none;
+}
+
+@media all and (min-width: 471px) {
+}
+
+@media all and (min-width: 851px) {
+  .portrait-image {
+    max-width: 300px;
+    height: auto;
+  }
   .about-content {
     flex-direction: row;
+    .left-column {
+      display: flex;
+      flex: 0 1 200px;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: inherit;
+      align-self: flex-start;
+    }
     .right-column {
       text-align: left;
     }
   }
-}
-
-@media (min-width: 1024px) {
-  .about-content {
-    flex-direction: row;
-    .right-column {
-      text-align: left;
-    }
+  .take-action-links {
+    margin-top: 10px;
+  }
+  .under-portrait {
+    display: block;
+  }
+  .under-about-content {
+    display: none;
   }
 }

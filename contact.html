@@ -15,6 +15,7 @@
 		<!-- style sheets -->
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="stylesheet" type="text/css" href="./css/contact.css">
 		<!-- font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,36 +43,78 @@
 					</a>
 				</li>
 			</ul>
-			<div class="navigation-smaller-screens">
-				<div class="page-logo-div">
-					<a href="./index.html"
-						class="page-logo-link">
-						Theodoros Georgitsis
+			<div class="navigation">
+				<a class="navigation-logo navigation-link"
+					href="./index.html">
+					Theodoros Georgitsis
+				</a>
+				<div class="navigation-middle">
+					<a class="navigation-link navigation-link-middle"
+						href="./projects.html">
+						My projects
+					</a>
+					<a class="navigation-link navigation-link-middle"
+						href="./about.html">
+						About me
 					</a>
 				</div>
-				<div class="middle-stretch-section"></div>
-				<div class="collapsible-menu">
-					<button class="hamburger menu-icon"></button>
-				</div>
-			</div>
-			<div class="navigation-bigger-screens">
-				<div class="page-logo-div">
-					<a href="./index.html"
-						class="page-logo-link">
-						Theodoros Georgitsis
+				<div class="navigation-end">
+					<a class="navigation-link lets-connect"
+						href="contact.html">
+						Let's connect
 					</a>
+					<button class="hamburger"></button>
 				</div>
-				<div class="middle-stretch-section">
-					<a href="projects.html">My projects</a>
-					<a href="about.html">About me</a>
-				</div>
-				<div class="lets-connect">
-					<a href="contact.html">Let's connect</a>
-				</div>
+
 			</div>
 
 		</header>
-		<main></main>
+		<main>
+			<h1 class="main-header">Let's connect...</h1>
+
+			<div class="contact-content">
+				<div class="contact-row">
+					<img src="./images/location.png"
+						class="contact-icon">
+					<div class="contact-information">Kongsvinger, Norway</div>
+				</div>
+
+				<a class="contact-row"
+					href="mailto:georgitsis.theodoros@gmail.com">
+					<img src="./images/email.png"
+						class="contact-icon">
+					<div class="contact-information contact-email">
+						georgitsis.theodoros@gmail.com
+					</div>
+				</a>
+
+				<a class="contact-row"
+					href="https://github.com/Georgitsis"
+					target="_blank">
+					<img src="./images/github.png"
+						class="contact-icon">
+					<div class="contact-information">Georgitsis</div>
+				</a>
+
+				<a class="contact-row"
+					href="https://www.linkedin.com/in/theo-georgitsis-25858a292/"
+					target="_blank">
+					<img src="./images/linkedin.png"
+						class="contact-icon">
+					<div class="contact-information">
+						Theodoros Georgitsis
+					</div>
+				</a>
+				<a class="contact-row"
+					href="./files/Georgitsis-Theodoros-Resume.pdf"
+					download="Georgitsis-Theodoros-Resume.pdf">
+					<img src="./images/document.png"
+						class="contact-icon">
+					<div class="contact-information">Download my resume</div>
+				</a>
+			</div>
+
+		</main>
 		<footer></footer>
 
 		<script src="./js/collapsiblemenu.js"></script>

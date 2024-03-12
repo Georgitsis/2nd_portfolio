@@ -52,9 +52,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #b0d8ef;
-  height: -moz-max-content;
-  height: max-content;
+  background-color: #b0e2ff;
 }
 
 header {
@@ -215,4 +213,103 @@ main {
   .main-header {
     font-size: 84px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+.contact-conntent {
+  width: 100%;
+}
+
+.contact-center-div {
+  max-width: 100%;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  background-color: #263238;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 850px;
+  max-width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-radius: 20px;
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.contact-row {
+  display: flex;
+  flex: 1 1 800px;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.contact-row:visited {
+  color: #fff;
+}
+.contact-row:hover, .contact-row:active {
+  color: #fff;
+  text-decoration: underline;
+}
+.contact-row:hover:first-child {
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 50px;
+  height: auto;
+}
+
+.contact-information {
+  flex: 1 1 200px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/*.contact-email {
+  overflow-wrap: break-word;
+}*/
+.contact-row:last-child {
+  justify-content: center;
+  background-color: #ffa500;
+  padding: 0 20px;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #fff;
+  animation: slideInFromButtom 0.5s ease forwards;
+}
+
+@media all and (min-width: 451px) {
+  .email-line-break {
+    display: none;
+  }
+}
+@media all and (max-width: 450px) {
+  .contact-row {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .contact-row {
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .contact-row {
+    font-size: 30px;
+  }
+}
+@media all and (min-width: 851px) and (max-width: 1023px) {
+  .contact-row {
+    font-size: 35px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .contact-row {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=contact.css.map */

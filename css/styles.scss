@@ -1,102 +1,103 @@
-$background-colour-bright: #b0e2ff;
-$font-colour-dark: #263238;
+@import "./animations.scss";
+
+$background-colour-bright: #b0d8ef;
+$background-colour-dark: #263238;
+
 $font-colour-bright: #fff;
+$font-colour-dark: #263238;
+
+$warm-colour: #ffa500;
 
 * {
   box-sizing: border-box;
 }
 
-:root {
-  a {
-    color: $font-colour-dark;
-
-    &:visited {
-      color: $font-colour-dark;
-    }
-
-    &:hover {
-      color: $font-colour-dark;
-    }
-
-    &:active {
-      color: $font-colour-dark;
-    }
-  }
-}
-
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
-  color: $font-colour-dark;
-  max-width: 1200px;
-  margin: 30px auto;
+  height: max-content;
 }
 header {
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: $background-colour-bright;
-  color: $font-colour-dark;
-  font-size: xx-large;
+  background-color: $background-colour-dark;
 }
 
+main {
+  color: $font-colour-dark;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navigation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.navigation-link {
+  color: $font-colour-bright;
+  font-size: xx-large;
+  text-decoration: none;
+
+  &:visited {
+    color: $font-colour-bright;
+  }
+
+  &:hover {
+    color: $font-colour-bright;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $font-colour-bright;
+  }
+}
 .page-logo-div {
   text-decoration: none;
   align-self: center;
 }
-
-.navigation-smaller-screens {
-  display: flex;
-
-  a {
-    text-decoration: none;
-  }
-
-  .page-logo-div {
-    flex-grow: 0;
-  }
-  .middle-stretch-section {
-    flex-grow: 1;
-  }
-
-  .collapsible-menu {
-    flex-grow: 0;
-  }
+.navigation-logo {
+  flex: 1 1 300px;
+  padding-left: 10px;
 }
 
-.navigation-bigger-screens {
-  display: flex;
+.navigation-middle {
+  display: none;
+}
 
-  a {
-    text-decoration: none;
-    &:active,
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.navigation-link-middle {
+  flex: 0 0 150px;
+}
 
-  .page-logo-div {
-    margin-left: 20px;
-    flex-grow: 0;
-    a {
-      text-decoration: none;
-    }
-  }
-  .middle-stretch-section {
-    flex-grow: 1;
-    text-align: center;
+.lets-connect {
+  display: none;
+}
 
-    a {
-      margin: 0 20px;
-    }
-  }
+.navigation-end {
+  flex: 1 1 300px;
+  text-align: end;
+  padding-right: 10px;
+}
 
-  .lets-connect {
-    flex-grow: 0;
-    margin-right: 20px;
-  }
+.hamburger {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: url("../images/menu-icon.png");
+}
+
+.close-icon {
+  background: url("../images/close-icon.png");
+}
+
+.main-header {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  animation: slideInFromTop 0.5s ease forwards;
 }
 
 .menu {
-  background-color: $font-colour-dark;
+  background-color: $background-colour-dark;
   list-style-type: none;
   padding-left: 0px;
   position: fixed;
@@ -106,13 +107,14 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   z-index: 99;
 
   li {
     text-align: center;
     border: 1px solid $font-colour-dark;
     padding: 10px 20px;
+    font-size: xx-large;
 
     a {
       text-decoration: none;
@@ -128,37 +130,55 @@ header {
     }
   }
 }
-
 .show-menu {
-  transform: translateY(85px);
+  transform: translateY(90px);
 }
-
-.hamburger {
-  height: 50px;
-  width: 50px;
-  border: none;
-}
-.menu-icon {
-  background: url("../images/menu-icon.png");
-}
-.close-icon {
-  background: url("../images/close-icon.png");
-}
-
-@media all and (max-width: 850px) {
-  .navigation-bigger-screens {
+@media all and (min-width: 890px) {
+  .navigation-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 200px;
+    column-gap: 20px;
+  }
+  .hamburger {
     display: none;
+  }
+  .lets-connect {
+    display: block;
+  }
+  .navigation-middle {
+    flex-grow: 1;
+  }
+  .navigation-logo,
+  .navigation-end {
+    flex-grow: 0;
+  }
+}
+
+@media all and (max-width: 450px) {
+}
+
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .main-header {
+    font-size: 60px;
+  }
+}
+
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .main-header {
+    font-size: 72px;
   }
 }
 
 @media all and (min-width: 851px) and (max-width: 1023px) {
-  .navigation-smaller-screens {
-    display: none;
+  .main-header {
+    font-size: 84px;
   }
 }
 
-@media (min-width: 1024px) {
-  .navigation-smaller-screens {
-    display: none;
+@media all and (min-width: 1024px) {
+  .main-header {
+    font-size: 84px;
   }
 }

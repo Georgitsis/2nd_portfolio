@@ -15,6 +15,7 @@
 		<!-- style sheets -->
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="stylesheet" type="text/css" href="./css/projects.css">
 		<!-- font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,36 +43,177 @@
 					</a>
 				</li>
 			</ul>
-			<div class="navigation-smaller-screens">
-				<div class="page-logo-div">
-					<a href="./index.html"
-						class="page-logo-link">
-						Theodoros Georgitsis
+			<div class="navigation">
+				<a class="navigation-logo navigation-link"
+					href="./index.html">
+					Theodoros Georgitsis
+				</a>
+				<div class="navigation-middle">
+					<a class="navigation-link navigation-link-middle"
+						href="./projects.html">
+						My projects
+					</a>
+					<a class="navigation-link navigation-link-middle"
+						href="./about.html">
+						About me
 					</a>
 				</div>
-				<div class="middle-stretch-section"></div>
-				<div class="collapsible-menu">
-					<button class="hamburger menu-icon"></button>
-				</div>
-			</div>
-			<div class="navigation-bigger-screens">
-				<div class="page-logo-div">
-					<a href="./index.html"
-						class="page-logo-link">
-						Theodoros Georgitsis
+				<div class="navigation-end">
+					<a class="navigation-link lets-connect"
+						href="contact.html">
+						Let's connect
 					</a>
+					<button class="hamburger"></button>
 				</div>
-				<div class="middle-stretch-section">
-					<a href="projects.html">My projects</a>
-					<a href="about.html">About me</a>
-				</div>
-				<div class="lets-connect">
-					<a href="contact.html">Let's connect</a>
-				</div>
+
 			</div>
 
 		</header>
-		<main></main>
+		<main>
+			<h1 class="main-header">My projects</h1>
+			<div class="project-flex-container">
+				<div class="project-image-container">
+					<img src="./images/MyFlixAngularClient.PNG"
+						class="project-image">
+				</div>
+				<div class="project-content">
+					<h2>
+						MyFlix Angular Client
+					</h2>
+					<p>
+						This MEAN stack application is tailored for user engagement with a movie library. Users can
+						easily register, log in, search for movies, delve into movie details and curate their
+						list of beloved films.
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/Georgitsis/myFlix-Angular-client"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/github-dark.png">
+							<div>Review the code</div>
+						</a>
+						<a href="https://georgitsis.github.io/myFlix-Angular-client/"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/website.png">
+							<div>Visit the website</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project-flex-container">
+				<div class="project-image-container">
+					<img src="./images/MyFlixReactClient.PNG"
+						class="project-image">
+				</div>
+				<div class="project-content">
+					<h2>MyFlix React Client</h2>
+					<p>
+						This is a MERN stack application designed for user interaction with a diverse movie collection.
+						Users can effortlessly sign up, log in, search for movies, access detailed movie information
+						(including description, genre, director, and year), curate their list of favorite movies, and
+						explore related movie suggestions.
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/Georgitsis/myFlix-client"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/github-dark.png">
+							<div>Review the code</div>
+						</a>
+						<a href="https://gorgeous-profiterole-db2d73.netlify.app/"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/website.png">
+							<div>Visit the website</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project-flex-container">
+				<div class="project-image-container">
+					<img src="./images/MyFlixAPI.png"
+						class="project-image">
+				</div>
+				<div class="project-content">
+					<h2>MyFlix API</h2>
+					<p>
+						This is the backend to the myFlix front end web apps, which were coded with React and Angular. It
+						establishes a secure server using Express.js, connects to a
+						MongoDB database, and defines API endpoints for actions like retrieving movie information and user
+						data. It also handles user authentication using JWT tokens.
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/Georgitsis/movie-api"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/github-dark.png">
+							<div>Review the code</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project-flex-container">
+				<div class="project-image-container">
+					<img src="./images/ChatApp.png"
+						class="project-image">
+				</div>
+				<div class="project-content">
+					<h2>Chat App</h2>
+					<p>
+						This project embodies a chat application crafted using React Native and Firebase. Its feature set
+						encompasses user authentication, live messaging, image exchange, and location sharing. Within this
+						application, users can sign-in anonymously, personalize their username and background
+						color, and participate in dynamic real-time chat dialogues.
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/Georgitsis/chat-app"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/github-dark.png">
+							<div>Review the code</div>
+						</a>
+						<a href="./files/Case-Study-Chat-app.pdf"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/website.png">
+							<div>Read the case study</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project-flex-container">
+				<div class="project-image-container">
+					<img src="./images/MeetAppScreenshot.PNG"
+						class="project-image">
+				</div>
+				<div class="project-content">
+					<h2>Meet App</h2>
+					<p>
+						This React application, developed using a test-driven methodology, adeptly retrieves data from the
+						Google Calendar API and employs OAuth authorization, in tandem with AWS Lambda functions. Within
+						this app, users can explore responsive charts that vividly present event counts across different
+						cities. It offers users the flexibility to select a specific city, customize the number of events
+						displayed, and delve into comprehensive event details, enhancing their overall experience.
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/georgitsis/meet"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/github-dark.png">
+							<div>Review the code</div>
+						</a>
+						<a href="https://georgitsis.github.io/meet/"
+							target="_blank"
+							class="project-link-row">
+							<img src="./images/website.png">
+							<div>Visit the website</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="flex-column-container"> -->
+		</main>
 		<footer></footer>
 
 		<script src="./js/collapsiblemenu.js"></script>

@@ -1,0 +1,104 @@
+@import "./styles.scss";
+
+.contact-conntent {
+  width: 100%;
+}
+.contact-center-div {
+  max-width: 100%;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  background-color: $font-colour-dark;
+  border: 2px solid $font-colour-bright;
+  color: $font-colour-bright;
+  width: 850px;
+  max-width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-radius: 20px;
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.contact-row {
+  display: flex;
+  flex: 1 1 800px;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: $font-colour-bright;
+  width: 100%;
+  column-gap: 20px;
+  &:visited {
+    color: $font-colour-bright;
+  }
+  &:hover,
+  &:active {
+    color: $font-colour-bright;
+    text-decoration: underline;
+  }
+  &:hover:first-child {
+    text-decoration: none;
+  }
+}
+.contact-icon {
+  width: 50px;
+  height: auto;
+}
+.contact-information {
+  //max-width: 100%;
+  flex: 1 1 200px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+/*.contact-email {
+  overflow-wrap: break-word;
+}*/
+
+.contact-row:last-child {
+  justify-content: center;
+  background-color: $warm-colour;
+  padding: 0 20px;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #fff;
+  animation: slideInFromButtom 0.5s ease forwards;
+}
+
+@media all and (min-width: 451px) {
+  .email-line-break {
+    display: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .contact-row {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .contact-row {
+    font-size: 25px;
+  }
+}
+
+@media all and (min-width: 651px) and (max-width: 850px) {
+  .contact-row {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 851px) and (max-width: 1023px) {
+  .contact-row {
+    font-size: 35px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .contact-row {
+    font-size: 35px;
+  }
+}

@@ -52,9 +52,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #b0d8ef;
-  height: -moz-max-content;
-  height: max-content;
+  background-color: #b0e2ff;
 }
 
 header {
@@ -215,4 +213,80 @@ main {
   .main-header {
     font-size: 84px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+.project-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.project-image-container {
+  flex: 1 1 400px;
+  align-self: center;
+}
+
+.project-image {
+  border-radius: 10px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: flex-start;
+  flex: 1 1 500px;
+  padding: 20px;
+}
+.project-content h2,
+.project-content p {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+}
+
+.project-image {
+  width: 100%;
+  border: solid 2px #263238;
+}
+
+.project-links {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.project-link-row {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  text-decoration: none;
+  color: #263238;
+}
+.project-link-row:visited {
+  color: #263238;
+}
+.project-link-row:hover {
+  color: #263238;
+  text-decoration: underline;
+}
+.project-link-row:active {
+  color: #263238;
+}
+.project-link-row img {
+  width: 30px;
+}
+
+@media all and (min-width: 920px) {
+  .project-image-container,
+  .project-content {
+    flex-grow: 0;
+  }
+  .project-flex-container:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+}/*# sourceMappingURL=projects.css.map */
