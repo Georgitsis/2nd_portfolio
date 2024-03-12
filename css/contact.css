@@ -222,10 +222,10 @@ main {
   max-width: 100%;
 }
 
-.contact-contant {
+.contact-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 20px;
   background-color: #263238;
   border: 2px solid #fff;
   color: #fff;
@@ -240,48 +240,47 @@ main {
 
 .contact-row {
   display: flex;
-}
-.contact-row .contact-icon-div {
-  flex: 0 0 100px;
-  text-align: center;
-}
-.contact-row .contact-icon-div .contact-icon {
-  max-width: 50px;
-  height: auto;
-}
-.contact-row .contact-information {
-  flex: 1 1 300px;
-  max-width: 100%;
-  align-self: center;
-}
-.contact-row .contact-information a {
+  flex: 1 1 800px;
+  width: 100%;
+  align-items: center;
   text-decoration: none;
   color: #fff;
-  text-wrap: wrap;
   width: 100%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
-.contact-row .contact-information a:visited {
+.contact-row:visited {
   color: #fff;
 }
-.contact-row .contact-information a:hover, .contact-row .contact-information a:active {
+.contact-row:hover, .contact-row:active {
   color: #fff;
   text-decoration: underline;
 }
+.contact-row:hover:first-child {
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 50px;
+  height: auto;
+}
+
+.contact-information {
+  flex: 1 1 200px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
 
 /*.contact-email {
-  flex-wrap: wrap;
+  overflow-wrap: break-word;
 }*/
 .contact-row:last-child {
-  text-align: center;
+  justify-content: center;
   background-color: #ffa500;
-  margin: 25px 5px;
-  padding: 20px;
+  padding: 0 20px;
   border-radius: 10px 10px 10px 10px;
   border: 2px solid #fff;
   animation: slideInFromButtom 0.5s ease forwards;
-}
-.contact-row:last-child .contact-information {
-  text-align: left;
 }
 
 @media all and (min-width: 451px) {
@@ -290,41 +289,27 @@ main {
   }
 }
 @media all and (max-width: 450px) {
-  .contact-information,
-  a {
+  .contact-row {
     font-size: 20px;
   }
 }
 @media all and (min-width: 451px) and (max-width: 650px) {
-  .contact-information,
-  a {
+  .contact-row {
     font-size: 25px;
   }
 }
 @media all and (min-width: 651px) and (max-width: 850px) {
-  .contact-information,
-  a {
+  .contact-row {
     font-size: 30px;
-  }
-  .contact-row:last-child .contact-information {
-    text-align: center;
   }
 }
 @media all and (min-width: 851px) and (max-width: 1023px) {
-  .contact-information,
-  a {
+  .contact-row {
     font-size: 35px;
-  }
-  .contact-row:last-child .contact-information {
-    text-align: center;
   }
 }
 @media all and (min-width: 1024px) {
-  .contact-information,
-  a {
+  .contact-row {
     font-size: 35px;
-  }
-  .contact-row:last-child .contact-information {
-    text-align: center;
   }
 }/*# sourceMappingURL=contact.css.map */
