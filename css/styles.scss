@@ -1,5 +1,12 @@
-@import "./variables.scss";
 @import "./animations.scss";
+
+$background-colour-bright: #b0d8ef;
+$background-colour-dark: #263238;
+
+$font-colour-bright: #fff;
+$font-colour-dark: #263238;
+
+$warm-colour: #ffa500;
 
 * {
   box-sizing: border-box;
