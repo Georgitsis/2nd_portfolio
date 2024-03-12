@@ -53,6 +53,8 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #b0e2ff;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 header {
