@@ -1,10 +1,16 @@
 @import "./styles.scss";
+
 .project-flex-container {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 20px;
+  animation: slideInFromLeft 0.5s ease forwards;
+  &:nth-of-type(2n){
+    animation: slideInFromRight 0.5s ease forwards;
+  }
 }
+
 .project-image-container {
   flex: 1 1 400px;
   align-self: center;
@@ -27,7 +33,7 @@
 }
 .project-image {
   width: 100%;
-  border: solid 2px $font-colour-dark;
+  border: solid 1px $font-colour-bright;
 }
 .project-links {
   display: flex;
@@ -58,7 +64,7 @@
   }
 }
 
-@media all and (min-width: 920px) {
+@media all and (min-width: 960px) {
   .project-image-container,
   .project-content {
     flex-grow: 0;

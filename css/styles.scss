@@ -16,6 +16,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $background-colour-bright;
   height: max-content;
+  min-height: 100vh;
 }
 header {
   background-color: $background-colour-dark;
@@ -25,6 +26,8 @@ main {
   color: $font-colour-dark;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+  font-size: large;
 }
 .navigation {
   max-width: 1200px;
@@ -92,8 +95,12 @@ main {
 .main-header {
   width: 100%;
   text-align: center;
-  font-size: 48px;
+  font-size: 8vw;
   animation: slideInFromTop 0.5s ease forwards;
+}
+
+.secondary-header {
+  font-size: 3vw;
 }
 
 .menu {
@@ -133,6 +140,15 @@ main {
 .show-menu {
   transform: translateY(90px);
 }
+
+@media all and (max-width: 600px) {
+  .main-header {
+    font-size: 48px;
+  }
+  .secondary-header {
+    font-size: 18px;
+  }
+}
 @media all and (min-width: 890px) {
   .navigation-middle {
     display: flex;
@@ -156,29 +172,12 @@ main {
   }
 }
 
-@media all and (max-width: 450px) {
-}
-
-@media all and (min-width: 451px) and (max-width: 650px) {
+@media all and (min-width: 1200px) {
   .main-header {
-    font-size: 60px;
+    font-size: 96px;
+  }
+  .secondary-header {
+    font-size: 36px;
   }
 }
 
-@media all and (min-width: 651px) and (max-width: 850px) {
-  .main-header {
-    font-size: 72px;
-  }
-}
-
-@media all and (min-width: 851px) and (max-width: 1023px) {
-  .main-header {
-    font-size: 84px;
-  }
-}
-
-@media all and (min-width: 1024px) {
-  .main-header {
-    font-size: 84px;
-  }
-}

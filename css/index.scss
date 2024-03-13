@@ -1,0 +1,60 @@
+@import "./styles.scss";
+@import "./animations.scss";
+main {
+  display: flex;
+  width: 100vw;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-div {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  column-gap: 1.5vw;
+  row-gap: 2vh;
+}
+.name-div {
+  font-size: 8vw;
+  flex: 1 1 1px;
+}
+
+.warm-font {
+  color: $warm-colour;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.profession{
+  flex: 0 1 1201px;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.slide-from-left {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.slide-from-right {
+  animation: slideInFromRight 0.5s ease forwards;
+}
+.slide-from-buttom {
+  animation: slideInFromButtom 0.5s ease forwards;
+}
+
+@media all and (min-width: 1200px) {
+  .name-div {
+    font-size: 96px;
+  }
+  .profession {
+    font-size: 60px;
+  }
+}
+
