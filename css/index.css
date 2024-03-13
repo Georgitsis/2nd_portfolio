@@ -131,10 +131,10 @@ main {
   background: url("../images/close-icon.png");
 }
 
-.main-header {
+.h1 {
   width: 100%;
   text-align: center;
-  font-size: 48px;
+  font-size: 5vw;
   animation: slideInFromTop 0.5s ease forwards;
 }
 
@@ -197,24 +197,9 @@ main {
     flex-grow: 0;
   }
 }
-@media all and (min-width: 451px) and (max-width: 650px) {
+@media all and (min-width: 1200px) {
   .main-header {
     font-size: 60px;
-  }
-}
-@media all and (min-width: 651px) and (max-width: 850px) {
-  .main-header {
-    font-size: 72px;
-  }
-}
-@media all and (min-width: 851px) and (max-width: 1023px) {
-  .main-header {
-    font-size: 84px;
-  }
-}
-@media all and (min-width: 1024px) {
-  .main-header {
-    font-size: 84px;
   }
 }
 @keyframes slideInFromRight {
