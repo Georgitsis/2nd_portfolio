@@ -42,15 +42,10 @@
   height: auto;
 }
 .contact-information {
-  //max-width: 100%;
   flex: 1 1 200px;
   word-wrap: break-word;
   overflow: hidden;
 }
-/*.contact-email {
-  overflow-wrap: break-word;
-}*/
-
 .contact-row:last-child {
   justify-content: center;
   background-color: $warm-colour;
