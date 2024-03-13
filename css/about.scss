@@ -1,12 +1,5 @@
 @import "./styles.scss";
 
-.main-header {
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  animation: slideInFromTop 0.5s ease forwards;
-}
-
 .about-content {
   display: flex;
   flex-direction: column;
@@ -60,9 +53,6 @@
 
 .under-portrait {
   display: none;
-}
-
-@media all and (min-width: 471px) {
 }
 
 @media all and (min-width: 851px) {

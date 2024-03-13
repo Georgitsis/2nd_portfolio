@@ -134,6 +134,12 @@ main {
 .show-menu {
   transform: translateY(90px);
 }
+
+@media all and (max-width: 600px) {
+  .main-header {
+    font-size: 48px;
+  }
+}
 @media all and (min-width: 890px) {
   .navigation-middle {
     display: flex;
