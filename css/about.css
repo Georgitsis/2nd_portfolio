@@ -131,10 +131,10 @@ main {
   background: url("../images/close-icon.png");
 }
 
-.h1 {
+.main-header {
   width: 100%;
   text-align: center;
-  font-size: 5vw;
+  font-size: 8vw;
   animation: slideInFromTop 0.5s ease forwards;
 }
 
@@ -199,7 +199,7 @@ main {
 }
 @media all and (min-width: 1200px) {
   .main-header {
-    font-size: 60px;
+    font-size: 96px;
   }
 }
 .main-header {
