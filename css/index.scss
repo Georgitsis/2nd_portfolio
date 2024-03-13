@@ -1,41 +1,60 @@
 @import "./styles.scss";
+@import "./animations.scss";
 main {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   align-items: center;
   justify-content: center;
 }
 
 .center-div {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 50%;
-  //flex-wrap: wrap;
-}
-.first-name {
-  font-size: 8vw;
   flex-grow: 1;
-  text-align: start;
+  flex-wrap: wrap;
+  column-gap: 1.5vw;
+  row-gap: 2vh;
 }
-.surname {
+.name-div {
   font-size: 8vw;
-  flex-grow: 1;
+  flex: 1 1 1px;
+}
+
+.warm-font {
+  color: $warm-colour;
+}
+
+.text-align-end {
   text-align: end;
 }
 
-.eo {
-  color: $warm-colour;
-  margin: 0;
-  display: inline-block;
+.italic {
+  font-style: italic;
+}
+
+.profession{
+  flex: 0 1 1201px;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.slide-from-left {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.slide-from-right {
+  animation: slideInFromRight 0.5s ease forwards;
+}
+.slide-from-buttom {
+  animation: slideInFromButtom 0.5s ease forwards;
 }
 
 @media all and (min-width: 1200px) {
-  .first-name {
-    font-size: 95px;
+  .name-div {
+    font-size: 96px;
   }
-  .surname {
-    font-size: 95px;
+  .profession {
+    font-size: 60px;
   }
 }
+
